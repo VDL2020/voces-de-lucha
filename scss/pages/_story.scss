@@ -1,0 +1,40 @@
+.story {
+    .hero-image {
+        height: 50vh;
+
+        @include media-lg {
+            height: 89vh;
+        }
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        &--1 {
+            background-image: url("/dist/img/image-2.png");
+        }
+
+        &--2 {
+            background-image: url("/dist/img/image-3.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &--3 {
+            background-image: url("/dist/img/image-4.png");
+        }
+    }
+    
+    .content{
+        padding: 5% 10%;
+        font-size: 1.2rem;
+        line-height: 1.8;
+
+        .article{
+            text-align: justify;
+            color: black;
+        }
+    }
+}

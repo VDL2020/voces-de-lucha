@@ -1,0 +1,51 @@
+footer {
+    padding: 1rem;
+
+    @include media-xl{
+        padding: 2% 30%;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 0.7rem;
+
+        &__logo {
+            display: grid;
+            border-right: 2px solid #555555;
+            width: 100%;
+            vertical-align: center;
+            justify-content: center;
+
+            img {
+                width: 5rem;
+            }
+        }
+
+        &__social-icons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            a {
+                @include transition-ease;
+                i{
+                    font-size: 1.7rem;
+                }
+                &:hover {
+                    color: $dark-pink;
+                }
+            }
+        }
+    }
+
+    .copy {
+        text-align: center;
+        font-size: 0.8rem;
+        color: grey;
+        margin-top: 2rem;
+
+        p{
+            margin-bottom: 0;
+        }
+    }
+}

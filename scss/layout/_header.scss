@@ -1,0 +1,8 @@
+header{
+    .container-fluid{
+        @include media-lg{
+            padding: 0 7%;
+        }
+
+    }
+}

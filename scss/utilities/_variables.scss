@@ -1,0 +1,30 @@
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
+$font-size-base           : 20;
+$font-size-base-px        : $font-size-base * 1px;
+$font-size-base-narrow    : $font-size-base - 2;
+$font-size-base-narrow-px : $font-size-base-narrow * 1px;
+
+$leading-base             : 1.4;
+$line-height-base         : round($font-size-base * $leading-base);
+$baseline                 : $line-height-base * 1px;
+
+$font-family-system       : 'Roboto', sans-serif;
+$font-family-sans         : "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif        : Georgia, "Times New Roman", Times, serif;
+$font-family-mono         : Menlo, Monaco, "Courier New", monospace;
+
+$font-family-base         : $font-family-system;
+$font-family-alt          : $font-family-serif;
+
+//Colors
+
+$pink: #FFCBCB;
+$dark-pink: #DE4463;
+$purple: #821752;
+$navy: #012E4D;
+$light-navy: #407088;
+$light-blue: #70ADB5;
+

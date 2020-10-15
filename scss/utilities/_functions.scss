@@ -1,0 +1,23 @@
+@function set-text-color($color) {
+    @if (lightness($color)> 40%) {
+        @return #000;
+    }
+
+    @else {
+        @return #fff;
+    }
+}
+
+@function set-url($url) {
+    @if $url == 2 {
+        @return '/dist/img/image-2.png';
+    }
+
+    @else if $url == 3 {
+        @return '/dist/img/image-3.png';
+    }
+
+    @else if  $url == 4 {
+        @return '/dist/img/image-4.png';
+    }
+}
