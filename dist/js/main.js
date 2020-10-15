@@ -5,7 +5,7 @@ $('.correo').on('submit', function(e) {
       messageBody += field.name + ": " + field.value + '%0D%0A';
     });
   
-    var hreflink = "mailto:carl@cuttingedgelighting.com?Subject=New%20Vendor&body=" + messageBody;
+    var hreflink = "mailto:carl@cuttingedgelighting.com?Subject=Libera%20Tu%20Voz&body=" + messageBody;
     $('.mail').attr("href", hreflink);
     e.preventDefault();
     $('.mail')[0].click()
