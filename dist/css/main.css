@@ -313,8 +313,8 @@ footer .copy p {
   display: -ms-grid;
   display: grid;
   padding: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffcbcb), color-stop(15%), to(rgba(255, 203, 203, 0))), url("/dist/img/image-1.png") no-repeat;
-  background: linear-gradient(to bottom, #ffcbcb, 15%, rgba(255, 203, 203, 0)), url("/dist/img/image-1.png") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffcbcb), color-stop(15%), to(rgba(255, 203, 203, 0))), url("../img/image-1.png") no-repeat;
+  background: linear-gradient(to bottom, #ffcbcb, 15%, rgba(255, 203, 203, 0)), url("../img/image-1.png") no-repeat;
   background-size: contain;
 }
 
@@ -326,7 +326,7 @@ footer .copy p {
 
 @media screen and (min-width: 1200px) {
   .home .content--title__image {
-    background: url("/dist/img/image-1.png") no-repeat;
+    background: url("../img/image-1.png") no-repeat;
     background-size: cover;
   }
 }
@@ -346,6 +346,12 @@ footer .copy p {
           align-items: center;
 }
 
+@media screen and (min-width: 992px) {
+  .home .content--full {
+    height: 80vh;
+  }
+}
+
 .home .content--full__cover {
   text-align: center;
   padding: 0 2rem;
@@ -359,16 +365,16 @@ footer .copy p {
 
 .home .content--full[data-url='2'] {
   background-color: #012E4D;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0))), url("/dist/img/image-2.png") center top;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("/dist/img/image-2.png") center top;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0))), url("../img/image-2.png") center top;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("../img/image-2.png") center top;
   background-size: cover;
   color: white;
 }
 
 .home .content--full[data-url='3'] {
   background-color: #012E4D;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0))), url("/dist/img/image-3.png") center top;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), url("/dist/img/image-3.png") center top;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0))), url("../img/image-3.png") center top;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), url("../img/image-3.png") center top;
   background-size: cover;
   color: black;
 }
@@ -379,8 +385,8 @@ footer .copy p {
 
 .home .content--full[data-url='4'] {
   background-color: #012E4D;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.3))), url("/dist/img/image-4.png") center top;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("/dist/img/image-4.png") center top;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.3))), url("../img/image-4.png") center top;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../img/image-4.png") center top;
   background-size: cover;
   color: white;
 }
@@ -574,18 +580,18 @@ footer .copy p {
 }
 
 .story .hero-image--1 {
-  background-image: url("/dist/img/image-2.png");
+  background-image: url("../img/image-2.png");
 }
 
 .story .hero-image--2 {
-  background-image: url("/dist/img/image-3.png");
+  background-image: url("../img/image-3.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .story .hero-image--3 {
-  background-image: url("/dist/img/image-4.png");
+  background-image: url("../img/image-4.png");
 }
 
 .story .content {
