@@ -1,26 +1,13 @@
-const menuBtn = document.querySelector('.menu-btn');
-const hamburger = document.querySelector('.menu-btn__burger');
-const nav = document.querySelector('.nav');
-const menuNav = document.querySelector('.menu-nav');
-const navItems = document.querySelectorAll('.menu-nav__item');
+$('.correo').on('submit', function(e) {
 
-let showMenu = false;
-
-menuBtn.addEventListener('click', toggleMenu);
-
-function toggleMenu() {
-    if (!showMenu) {
-        hamburger.classList.add('open');
-        nav.classList.add('open');
-        menuNav.classList.add('open');
-        navItems.forEach(item=>item.classList.add('open'));
-        showMenu = true;
-    } else {
-        hamburger.classList.remove('open');
-        nav.classList.remove('open');
-        menuNav.classList.remove('open');
-        navItems.forEach(item=>item.classList.remove('open'));
-
-        showMenu = false;
-    }
-}
+    var messageBody = '';
+    $.each($('.correo').serializeArray(), function(i, field) {
+      messageBody += field.name + ": " + field.value + '%0D%0A';
+    });
+  
+    var hreflink = "mailto:carl@cuttingedgelighting.com?Subject=New%20Vendor&body=" + messageBody;
+    $('.mail').attr("href", hreflink);
+    e.preventDefault();
+    $('.mail')[0].click()
+  
+  });
