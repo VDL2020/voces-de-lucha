@@ -391,6 +391,30 @@ footer .copy p {
   color: white;
 }
 
+.home .content--full[data-url='5'] {
+  background-color: #012E4D;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.3))), url("../img/image-5.png") center top;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../img/image-5.png") center top;
+  background-size: cover;
+  color: white;
+}
+
+.home .content--full[data-url='6'] {
+  background-color: #012E4D;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.3))), url("../img/image-6.png") center top;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../img/image-6.png") center top;
+  background-size: cover;
+  color: white;
+}
+
+.home .content--full[data-url='7'] {
+  background-color: #012E4D;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.3))), url("../img/image-7.png") center top;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../img/image-7.png") center top;
+  background-size: cover;
+  color: white;
+}
+
 .about .intro {
   text-align: center;
   background: #DE4463;
@@ -594,6 +618,22 @@ footer .copy p {
   background-image: url("../img/image-4.png");
 }
 
+.story .hero-image--4 {
+  background-image: url("../img/image-5.png");
+  background-size: contain;
+  margin-top: 2rem;
+}
+
+.story .hero-image--5 {
+  background-image: url("../img/image-6-alt.png");
+  background-size: contain;
+  margin-top: 2rem;
+}
+
+.story .hero-image--6 {
+  background-image: url("../img/image-7.png");
+}
+
 .story .content {
   padding: 5% 10%;
   font-size: 1.2rem;
@@ -603,5 +643,9 @@ footer .copy p {
 .story .content .article {
   text-align: justify;
   color: black;
+}
+
+.story audio:focus {
+  outline: none;
 }
 /*# sourceMappingURL=main.css.map */

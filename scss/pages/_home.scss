@@ -40,14 +40,14 @@
             padding: 0;
             background: linear-gradient(to bottom,
                     rgba($pink, 1), 15%,
-                    rgba($pink, 0)), url('/dist/img/image-1.png') no-repeat;
+                    rgba($pink, 0)), url('../img/image-1.png') no-repeat;
             background-size: contain;
             @include media-md{
                 background-size: cover;
             }
 
             @include media-xl{
-                background: url('/dist/img/image-1.png') no-repeat;
+                background: url('../img/image-1.png') no-repeat;
                 background-size: cover;
             }
 
@@ -63,6 +63,10 @@
         height: 60vh;
         display: grid;
         align-items: center;
+
+        @include media-lg{
+            height: 80vh;
+        }
 
         &__cover {
             text-align: center;
@@ -101,6 +105,33 @@
             background: linear-gradient(to top,
             rgba(black, 0.5),
             rgba(black, 0.3)) , url(set-url(4)) center top;
+            background-size: cover;
+            color: white;
+        }
+
+        &[data-url='5']{
+            background-color: $navy;
+            background: linear-gradient(to top,
+            rgba(black, 0.5),
+            rgba(black, 0.3)) , url(set-url(5)) center top;
+            background-size: cover;
+            color: white;
+        }
+
+        &[data-url='6']{
+            background-color: $navy;
+            background: linear-gradient(to top,
+            rgba(black, 0.5),
+            rgba(black, 0.3)) , url(set-url(6)) center top;
+            background-size: cover;
+            color: white;
+        }
+
+        &[data-url='7']{
+            background-color: $navy;
+            background: linear-gradient(to top,
+            rgba(black, 0.5),
+            rgba(black, 0.3)) , url(set-url(7)) center top;
             background-size: cover;
             color: white;
         }

@@ -12,29 +12,52 @@
         position: relative;
 
         &--1 {
-            background-image: url("/dist/img/image-2.png");
+            background-image: url("../img/image-2.png");
         }
 
         &--2 {
-            background-image: url("/dist/img/image-3.png");
+            background-image: url("../img/image-3.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
 
         &--3 {
-            background-image: url("/dist/img/image-4.png");
+            background-image: url("../img/image-4.png");
+        }
+
+        &--4 {
+            background-image: url("../img/image-5.png");
+            background-size: contain;
+            margin-top: 2rem;
+        }
+
+        &--5 {
+            background-image: url("../img/image-6-alt.png");
+            background-size: contain;
+            margin-top: 2rem;
+        }
+
+        &--6 {
+            background-image: url("../img/image-7.png");
+
         }
     }
-    
-    .content{
+
+    .content {
         padding: 5% 10%;
         font-size: 1.2rem;
         line-height: 1.8;
 
-        .article{
+        .article {
             text-align: justify;
             color: black;
+        }
+    }
+
+    audio {
+        &:focus {
+            outline: none;
         }
     }
 }

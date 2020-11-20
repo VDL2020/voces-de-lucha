@@ -9,15 +9,27 @@
 }
 
 @function set-url($url) {
-    @if $url == 2 {
-        @return '/dist/img/image-2.png';
+    @if $url==2 {
+        @return '../img/image-2.png';
     }
 
-    @else if $url == 3 {
-        @return '/dist/img/image-3.png';
+    @else if $url==3 {
+        @return '../img/image-3.png';
     }
 
-    @else if  $url == 4 {
-        @return '/dist/img/image-4.png';
+    @else if $url==4 {
+        @return '../img/image-4.png';
+    }
+
+    @else if $url==5 {
+        @return '../img/image-5.png';
+    }
+
+    @else if $url==6 {
+        @return '../img/image-6.png';
+    }
+
+    @else if $url==7 {
+        @return '../img/image-7.png';
     }
 }
