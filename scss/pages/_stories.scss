@@ -35,42 +35,56 @@
         }
     }
 
-    .story{
-        &--right{
+    .story {
+        &--right {
             background: $light-blue;
         }
 
-        &--left{
+        &--left {
             background: $pink;
         }
 
-        &__card{
-            @include media-lg{
+        &--podcast {
+            background: #F68271;
+
+        }
+
+        &__card {
+            @include media-lg {
                 display: none;
             }
         }
 
-        &__column{
+        &__column {
             display: none;
 
-            &--text{
+            &--text {
                 padding: 0 10%;
+
+                .header {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 64px;
+                    line-height: 75px;
+                }
             }
 
-            img{
+            img {
                 height: 80vh;
             }
 
-            @include media-lg{
+            @include media-lg {
                 display: flex;
             }
         }
 
-        &__mask{
-            &--right{
+        &__mask {
+            &--right {
                 background-color: #70adb565
             }
-            &--left{
+
+            &--left {
                 background-color: #FFCBCB65
             }
         }
